@@ -1,0 +1,38 @@
+Java Streams
+-------------
+feature of 1.8 v in this the stream api was introduced to process objects from the collection like list, set .. etc efficiently.
+
+phases of stream processing
+---------------------------
+1. Configuration phase(Intermediate Operations)
+------------------------------------------------
+filter()
+map()
+
+2. Processing phase(terminal Operations)
+----------------------------------------
+processing by collect()
+processing by count ()
+processing by sorted()
+processing by min() & max()
+processing by forEach()
+processing by toArray()
+stream.of()
+---------------------------------
+
+filter()
+========
+used to filter elements from a collection based on Boolean Condition
+syntax
+------
+Stream<T>filter(Predicate<?super T>predicate)
+
+map()
+=====
+used to transform or modify each element of a collection into another form
+
+syntax
+------
+<R>Stream<R>map(Function<?super T?extends R> mapper)
+
+Stream s = c.stream();
